@@ -1,0 +1,31 @@
+State Chart Diagram Editor:
+
+1. Use joint.js demo StatChart (http://www.jointjs.com/demos/umlsc) as the base
+2. States:
+   - nice/clean professional looking state symbols/shapes: rectangle (rounded corner, header with label), 
+     diamond (with label), sync bars (horizontal/vertical) and hexagon (header with label).
+   - resize state by dragging on its corner or side
+   - nested state: child state can only move within the boundary of parent state
+   - readonly state: state can not be moved, transitions going into/out can not be moved either.
+3. Transitions:
+   - transitions ends must be conneted to states at all time but still allow drag/drop ends to be attached to another state.
+   - movable transition label/name
+   - readonly transition (can not be moved or re-routed)
+   - transition style (curve, straight line, zig-zag with rounded corner) that can be re-shapped by dragging on transition segment
+4. javascript API
+   - add state or child state with initial position
+   - remove state (also auto remove all incoming and outgoing transitions)
+   - update state attributes (text color, background color, border color, symbol shape, readonly)
+   - add transitions with specified position and routing
+   - update transition attributes (routing style, label text color, label background color, line color, ends must be same color as transition line)
+   - highlight/un-highlight the state and/or transitions with visual effect  
+   - hide / un-hide states - auto hide / un-hide all incoming/outgoing transitions
+   - scroll to a specific state or transition (bring it into view port) 
+5. general:
+   - undo and redo editing/changes
+   - lasso: drag a rectangular to select states
+   - zoom in/out (scale everything)
+   - auto layout using Dagre auto-layout package (see demo at http://www.daviddurman.com/automatic-graph-layout-with-jointjs-and-dagre.html)  
+   - drag-drop motion to create: 
+      - new transition to connect two states
+      - new transition and a new state
