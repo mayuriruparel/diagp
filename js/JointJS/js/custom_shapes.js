@@ -3,8 +3,8 @@
     var readonly_graph = new joint.dia.Graph;
     var paper = new joint.dia.Paper({
         el: $('#paper-element-styling'),
-        width: 600,
-        height: 200,
+        width: 800,
+        height: 400,
         model: graph
         
     });
@@ -57,10 +57,12 @@
         rect: { fill: '#cccccc', 'stroke-width': 2, stroke: 'black' },
         text: {
             text: 'Diamond', fill: '#3498DB',
-            'font-size': 18, 'font-weight': 'bold', 'font-variant': 'small-caps', 'text-transform': 'capitalize'
+            'font-size': 18, 'font-weight': 'bold', 
+            'font-variant': 'small-caps', 
+            'text-transform': 'capitalize'
         }
     });
-  
+  rhombus.rotate(45);
   //rect.resize(400,400);
   paper.model.addCells([rect,rhombus]);
   readonly_paper.model.addCells([readonly_rect]);
