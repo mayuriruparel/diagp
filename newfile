@@ -29,3 +29,34 @@ State Chart Diagram Editor:
    - drag-drop motion to create: 
       - new transition to connect two states
       - new transition and a new state
+
+
+Hello,
+
+
+I m new to jointJS, I need to create custom shapes using JointJS, I have tried creating the diamond shape using the Rectangle, making its height and width same, and then rotate by 45 degrees as follows,
+
+var diamond =  new joint.shapes.basic.Rect({
+        position: { x: 100, y: 100 },
+        size: { width: 100, height: 100 },
+        attrs: { diamond: { width: 100, height: 30 } }
+    }); 
+    diamond.attr({
+        
+        rect: { fill: '#cccccc', 'stroke-width': 2, stroke: 'black' },
+        text: {
+            text: 'Diamond', fill: '#3498DB',
+            'font-size': 18, 'font-weight': 'bold', 
+            'font-variant': 'small-caps', 
+            'text-transform': 'capitalize'
+        }
+    });
+  diamond.rotate(45);
+
+However, the text present inside the rectangle also gets rotated, Any Ideas how can i proceed.... Also I need to create hexagon with a label... Any help will be much appreciated .... 
+
+Thanks In Advance,
+
+Mayuri
+
+
