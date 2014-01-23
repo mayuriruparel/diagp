@@ -59,7 +59,7 @@
         }
     });
     
-    var diamond =  new joint.shapes.basic.Rect({
+    var diamond =  new joint.shapes.basic.Diamond({
         position: { x: 100, y: 100 },
         size: { width: 100, height: 100 },
         attrs: { diamond: { width: 100, height: 30 } }
@@ -74,7 +74,7 @@
             'text-transform': 'capitalize'
         }
     });
-  diamond.rotate(45);
+  //diamond.rotate(45);
  
  
     var resize_rect =  new joint.shapes.basic.Rect({
