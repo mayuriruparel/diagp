@@ -98,11 +98,11 @@
    resize_paper.model.addCells([resize_rect]);
    resize_paper.on('cell:pointerdown', function(cellView, evt, x, y) {
     var bbox = cellView.getBBox();
-    console.log("---------bbox--"+(bbox));
+    //console.log("---------bbox--"+(bbox));
     var strokeWidth = cellView.model.attr('rect/stroke-width') || 1;
-    console.log("---------strokeWidth--"+(strokeWidth));
-    console.log("---------x--"+(x));
-    console.log("---------y--"+(y));
+   // console.log("---------strokeWidth--"+(strokeWidth));
+    //console.log("---------x--"+(x));
+    //console.log("---------y--"+(y));
     isBorderClicked(bbox, x, y, strokeWidth);
 });
   readonly_paper.model.addCells([readonly_rect]);
@@ -110,9 +110,9 @@
  
   
 function isBorderClicked(bbox, x, y, strokeWidth){
-     console.log("---- border clicked----");
-    console.log("1111111---------bbox--"+(bbox));
-    console.log("1111111---------strokeWidth--"+(strokeWidth));
-    console.log("11111---------x--"+(x));
-    console.log("1111111---------y--"+(y));
+    // console.log("---- border clicked----");
+  //  console.log("1111111---------bbox--"+(bbox));
+ //   console.log("1111111---------strokeWidth--"+(strokeWidth));
+  //  console.log("11111---------x--"+(x));
+  //  console.log("1111111---------y--"+(y));
 }
